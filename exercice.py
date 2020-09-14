@@ -8,7 +8,6 @@ def square_root(number: int) -> float:
 def square(number: int) -> int:
     return math.pow(number,2)
 
-
 def main() -> None:
     for i in range(25):
         print(f"Square root: {square_root(i)}, square: {square(i)}")
