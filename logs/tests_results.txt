@@ -1,14 +1,17 @@
-test_upper_case_names (__main__.TestExercice) ... ERROR
+test_square (__main__.TestExercice) ... ERROR
+test_square_root (__main__.TestExercice) ... ok
 
 ======================================================================
-ERROR: test_upper_case_names (__main__.TestExercice)
+ERROR: test_square (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 17, in test_upper_case_names
-    output = list(map(exercice.majuscule, self.words))
-AttributeError: module 'exercice' has no attribute 'majuscule'
+  File "test_exercice.py", line 17, in test_square
+    output_exo = list(map(exercice.square, self.numbers))
+  File "/home/runner/work/c01_ch3_exercice1-DaddyChucky/c01_ch3_exercice1-DaddyChucky/exercice.py", line 11, in square
+    return squared
+NameError: name 'squared' is not defined
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.000s
+Ran 2 tests in 0.001s
 
 FAILED (errors=1)
